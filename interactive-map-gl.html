@@ -8,10 +8,54 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="css/leaflet.css" />
 </head>
 <body>
+  <style media="screen">
+  #menu {
+    background: #fff;
+    /*position: absolute;*/
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    border-radius: 3px;
+    width: 120px;
+    border: 1px solid rgba(0,0,0,0.4);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #menu a {
+    font-size: 13px;
+    color: #404040;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    text-align: center;
+  }
+
+  #menu a:last-child {
+    border: none;
+  }
+
+  #menu a:hover {
+    background-color: #f8f8f8;
+    color: #404040;
+  }
+
+  #menu a.active {
+    background-color: #3887be;
+    color: #ffffff;
+  }
+
+  #menu a.active:hover {
+    background: #3074a4;
+  }
+  </style>
+
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Logo</a>
@@ -33,11 +77,9 @@
 
       <!--   Icon Section   -->``
       <div class="row">
-        <div class="col s12 m8">
+        <div class="col s12 m10">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
             <h5 class="center">Interactive Map</h5>
-
 
             <div id="map">
 
@@ -46,12 +88,11 @@
         </div>
 
 
-        <div class="col s12 m4">
+        <div class="col s12 m2">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
             <h5 class="center">Categories</h5>
 
-            <p class="light">Categories TBD</p>
+            <nav id="menu"></nav>
           </div>
         </div>
       </div>
@@ -92,9 +133,10 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
   <script src="js/materialize.js"></script>
-  <script src="js/leaflet.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/mapbox-gl-js.js"></script>
 
   </body>
 </html>
