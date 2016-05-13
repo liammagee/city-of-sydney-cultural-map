@@ -10,3 +10,29 @@ nav i.material-icons, nav i.icon-text {
 #menu {
   color: #000;
 }
+
+
+
+#performance-and-exhibition div {
+  background-color: rgba(207, 73, 0, 0.5);
+}
+
+#festivals-and-public-space div {
+  background-color: rgba(32, 93, 134, 0.5);
+}
+
+#commercial-and-enterprise div {
+  background-color: rgba(196, 218, 241, 0.5);
+}
+
+#practice-education-and-development div {
+  background-color: rgba(0, 122, 75, 0.5);
+}
+
+#community-and-participation div {
+  background-color: rgba(122, 193, 67, 0.5);
+}
+
+#digital-space div {
+  background-color: rgba(128, 128, 128, 0.5);
+}

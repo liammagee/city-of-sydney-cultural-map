@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-05-13T13:55:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/387741348",
+      "properties": {
+        "@id": "way/387741348",
+        "building": "yes",
+        "name": "Foot Locker",
+        "shop": "shoes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.2071467,
+              -33.8734917
+            ],
+            [
+              151.207138,
+              -33.873579
+            ],
+            [
+              151.207516,
+              -33.8736197
+            ],
+            [
+              151.2075618,
+              -33.8736246
+            ],
+            [
+              151.2075745,
+              -33.8735328
+            ],
+            [
+              151.2075577,
+              -33.8735322
+            ],
+            [
+              151.2071467,
+              -33.8734917
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
