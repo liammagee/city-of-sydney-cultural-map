@@ -130,7 +130,7 @@ $(document).ready(function() {
 
           var visibility = map.getLayoutProperty(id, 'visibility');
 
-          if (visibility === 'visible') {
+          if (visibility === 'visible' || typeof(visibility) === 'undefined') {
               map.setLayoutProperty(id, 'visibility', 'none');
               this.className = '';
           } else {
