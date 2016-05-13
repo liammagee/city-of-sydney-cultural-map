@@ -52,10 +52,11 @@ map.on('load', function () {
 
 });
 
-addLayer('Contours', 'contours');
-addLayer('Cultural Venues', 'cultural-venues');
+// addLayer('Contours', 'contours');
+// addLayer('Cultural Venues', 'cultural-venues');
 
 function addLayer(name, id) {
+
     var link = document.createElement('a');
     link.href = '#';
     link.className = 'active';

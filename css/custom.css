@@ -1,0 +1,12 @@
+nav i.material-icons, nav i.icon-text {
+  vertical-align: middle;
+  display: inline;
+}
+
+#map {
+  height: 450px;
+}
+
+#menu {
+  color: #000;
+}

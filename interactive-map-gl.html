@@ -3,68 +3,32 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Parallax Template - Materialize</title>
+  <title>Cultural Map of Sydney</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <style media="screen">
-  #menu {
-    background: #fff;
-    /*position: absolute;*/
-    z-index: 1;
-    top: 10px;
-    right: 10px;
-    border-radius: 3px;
-    width: 120px;
-    border: 1px solid rgba(0,0,0,0.4);
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  #menu a {
-    font-size: 13px;
-    color: #404040;
-    display: block;
-    margin: 0;
-    padding: 0;
-    padding: 10px;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0,0,0,0.25);
-    text-align: center;
-  }
-
-  #menu a:last-child {
-    border: none;
-  }
-
-  #menu a:hover {
-    background-color: #f8f8f8;
-    color: #404040;
-  }
-
-  #menu a.active {
-    background-color: #3887be;
-    color: #ffffff;
-  }
-
-  #menu a.active:hover {
-    background: #3074a4;
-  }
-  </style>
 
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo">Cultural Map of Sydney</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#"><i class="small material-icons">search</i>Explore</a></li>
+        <li><a href="#"><i class="small material-icons">info</i>Learn More</a></li>
+        <li><a href="#"><i class="small material-icons">share</i>Share</a></li>
+        <li><a href="#"><i class="small material-icons">add</i>Contribute</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#"><i class="small material-icons">search</i>Explore</a></li>
+        <li><a href="#"><i class="small material-icons">info</i>Learn More</a></li>
+        <li><a href="#"><i class="small material-icons">share</i>Share</a></li>
+        <li><a href="#"><i class="small material-icons">add</i>Contribute</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -75,12 +39,10 @@
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->``
+      <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m10">
+        <div class="col s12 m8">
           <div class="icon-block">
-            <h5 class="center">Interactive Map</h5>
-
             <div id="map">
 
             </div>
@@ -88,11 +50,131 @@
         </div>
 
 
-        <div class="col s12 m2">
+        <div class="col s12 m4">
           <div class="icon-block">
-            <h5 class="center">Categories</h5>
+            <h5 class="center">Filter</h5>
 
-            <nav id="menu"></nav>
+              <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header">Performance and Exhibition</div>
+                  <div class="collapsible-body">
+                    <ul class="collection">
+                      <li class="collection-item">Concert halls</li>
+                      <li class="collection-item">Contemporary music venues</li>
+                      <li class="collection-item">Lyric theatre-main stage</li>
+                      <li class="collection-item">Lyric theatre-musical theatre</li>
+                      <li class="collection-item">Drama and dance theatre</li>
+                      <li class="collection-item">Arena/Large multi-purpose</li>
+                      <li class="collection-item">Alternative venues </li>
+                      <li class="collection-item">Museum of Art</li>
+                      <li class="collection-item">Museum of Applied Art</li>
+                      <li class="collection-item">Museum of Social History</li>
+                      <li class="collection-item">Museum of Natural History</li>
+                      <li class="collection-item">University Museum of Art</li>
+                      <li class="collection-item">Contemporary Centres of Arts</li>
+                      <li class="collection-item">Contemporary Centre for Applied Art</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Festivals and Public Space</div>
+                  <div class="collapsible-body">
+                    <ul class="collection">
+                      <li class="collection-item">Festival spaces</li>
+                      <li class="collection-item">Open public spaces</li>
+                      <li class="collection-item">Indoor public spaces</li>
+                      <li class="collection-item">Market spaces</li>
+                      <li class="collection-item">Privately owned public spaces</li>
+                      <li class="collection-item">Transformed disused spaces:</li>
+                      <li class="collection-item">City art</li>
+                      <li class="collection-item">Temporary spaces</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Commercial and Enterprise</div>
+                  <div class="collapsible-body">
+                    <ul class="collection">
+                      <li class="collection-item">Advertising services</li>
+                      <li class="collection-item">Architectural services</li>
+                      <li class="collection-item">Music publishing</li>
+                      <li class="collection-item">Other specialised design services</li>
+                      <li class="collection-item">Professional photographic services</li>
+                      <li class="collection-item">Artists</li>
+                      <li class="collection-item">Cartooning</li>
+                      <li class="collection-item">Costume designing</li>
+                      <li class="collection-item">Creative arts services</li>
+                      <li class="collection-item">Musicians</li>
+                      <li class="collection-item">Playwriting or screenwriting</li>
+                      <li class="collection-item">Sculpting</li>
+                      <li class="collection-item">Theatre lighting design service</li>
+                      <li class="collection-item">Glass and Glass product manufacturing (creative niche)</li>
+                      <li class="collection-item">Other ceramic Product manufacturing (creative niche)</li>
+                      <li class="collection-item">Jewellery and Silverware manufacturing (creative niche)</li>
+                      <li class="collection-item">Book publishing</li>
+                      <li class="collection-item">Cable and Broadcasting</li>
+                      <li class="collection-item">Television Broadcasting</li>
+                      <li class="collection-item">Magazine and other periodical Publishing</li>
+                      <li class="collection-item">Motion picture and video production & distribution</li>
+                      <li class="collection-item">Newspaper publishing</li>
+                      <li class="collection-item">Radio Broadcasting</li>
+                      <li class="collection-item">Motion Picture exhibition (Cinema)</li>
+                      <li class="collection-item">Performing art operation (art company/ office)</li>
+                      <li class="collection-item">Antique goods retailing</li>
+                      <li class="collection-item">Art gallery retailing (commercial art gallery)</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Practice, Education and Development</div>
+                  <div class="collapsible-body">
+                    <ul class="collection">
+                      <li class="collection-item">Schools</li>
+                      <li class="collection-item">Colleges</li>
+                      <li class="collection-item">University</li>
+                      <li class="collection-item">Art schools</li>
+                      <li class="collection-item">Dance schools</li>
+                      <li class="collection-item">Rehearsal facilities</li>
+                      <li class="collection-item">Music Schools</li>
+                      <li class="collection-item">Film and theatre schools</li>
+                      <li class="collection-item">Arts and crafts facilities</li>
+                      <li class="collection-item">Development spaces</li>
+                      <li class="collection-item">Art residency</li>
+                      <li class="collection-item">Not-for-profit Artist Run Art Centre/Galleries</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Community and Participation</div>
+                  <div class="collapsible-body">
+                    <ul class="collection">
+                      <li class="collection-item">Community centres</li>
+                      <li class="collection-item">Libraries and archives</li>
+                      <li class="collection-item">Makerspaces</li>
+                      <li class="collection-item">Co-working spaces</li>
+                      <li class="collection-item">Unions</li>
+                      <li class="collection-item">Business incubators and accelerators</li>
+                      <li class="collection-item">Art Councils</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Digital Space</div>
+                  <div class="collapsible-body">
+                    <ul class="collection">
+                      <li class="collection-item">Formal and informal digital archives</li>
+                      <li class="collection-item">Apps for virtual artmaking and exploring archives</li>
+                      <li class="collection-item">Combined hardware /software  immersive visualisation platforms</li>
+                      <li class="collection-item">Simulations and serious games</li>
+                      <li class="collection-item">Virtual worlds</li>
+                      <li class="collection-item">Machinima</li>
+                      <li class="collection-item">Augmented reality</li>
+                      <li class="collection-item">Digital Space	Hybrid/digital performances</li>
+                    </ul>
+                  </div>
+                </li>
+
+              </ul>
           </div>
         </div>
       </div>
