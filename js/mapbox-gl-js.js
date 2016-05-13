@@ -8,7 +8,7 @@ var map = new mapboxgl.Map({
     //stylesheet location
     style: 'mapbox://styles/mapbox/streets-v8',
     // starting position
-    center: [151.200, -33.868],
+    center: [151.210, -33.868],
     zoom: 13
 });
 
